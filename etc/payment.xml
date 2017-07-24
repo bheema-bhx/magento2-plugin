@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+* BtciPay module dependency
+*
+* @category    BtciPay
+* @package     BtciPay_Merchant
+* @author      BtciPay
+* @copyright   BtciPay (https://btci.com)
+* @license     https://github.com/bheema-bhx/magento2-plugin/blob/master/LICENSE The MIT License (MIT)
+*/
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+    <methods>
+        <method name="btci_merchant">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+    </methods>
+</payment>

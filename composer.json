@@ -1,0 +1,29 @@
+{
+    "name": "bheema-bhx/magento2-plugin",
+    "type": "magento2-module",
+    "description": "Bitcoin India's Magento 2 Plugin for Bitcoin Integration",
+    "version": "1.0.0",
+    "keywords": [
+      "bitcoin india",
+      "bitcoin",
+      "merchant",
+      "magento"
+    ],
+    "homepage": "https://btci.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Btci - Bitcoin India",
+            "homepage": "https://github.com/bheema-bhx/"
+        }
+    ],
+    "require": {
+        "bheema-bhx/btci-php": "1.*"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "BtciPay\\Merchant\\": ""
+        }
+    }
+}

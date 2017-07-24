@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+* BtciPay module dependency
+*
+* @category    BtciPay
+* @package     BtciPay_Merchant
+* @author      BtciPay
+* @copyright   BtciPay (https://btci.com)
+* @license     https://github.com/bheema-bhx/magento2-plugin/blob/master/LICENSE The MIT License (MIT)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <btci_merchant>
+                <active>0</active>
+                <model>BtciPay\Merchant\Model\Payment</model>
+                <order_status>pending_payment</order_status>
+                <payment_action>authorize_capture</payment_action>
+                <title>Bitcoin via BtciPay</title>
+                <api_secret backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </btci_merchant>
+        </payment>
+    </default>
+</config>
