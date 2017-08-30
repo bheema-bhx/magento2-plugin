@@ -124,6 +124,7 @@ class Payment extends AbstractMethod
         $params = array(
             'order_id' => $order->getIncrementId(),
             'price' => number_format($order->getGrandTotal(), 2, '.', ''),
+            'buyer_email' => $order->getCustomerEmail(),
             'currency' => $order->getOrderCurrencyCode(),
             'receive_currency' => $this->getConfigData('receive_currency'),
             'callback_url' => ($this->urlBuilder->getUrl('btci/payment/callback') . '?token=' . $payment->getAdditionalInformation('btci_order_token')),
