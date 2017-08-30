@@ -38,13 +38,13 @@
                 <field id="receive_currency" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Receive Currency</label>
                     <source_model>BtciPay\Merchant\Model\Source\Receivecurrencies</source_model>
-                    <comment>Currency you want to receive when making withdrawal at BtciPay. Please take a note what if you choose EUR or USD you will be asked to verify your business before making a withdrawal at BtciPay.</comment>
+                    <!-- <comment>Currency you want to receive when making withdrawal at BtciPay. Please take a note what if you choose EUR or USD you will be asked to verify your business before making a withdrawal at BtciPay.</comment> -->
                 </field>
-                <field id="sandbox_mode" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                <!-- <field id="sandbox_mode" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Sandbox Mode</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>Please note, that for Sandbox mode you must generate separate API credentials on sandbox.btci.com. API credentials generated on btci.com will not work for Sandbox mode.</comment>
-                </field>
+                </field> -->
                 <field id="sort_order" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Sort Order</label>
                 </field>

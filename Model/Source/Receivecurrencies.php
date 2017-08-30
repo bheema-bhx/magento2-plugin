@@ -18,8 +18,9 @@ class Receivecurrencies
      public function toOptionArray()
      {
          return array(
-            array('value' => 'btc', 'label' => 'Bitcoin (฿)'),
-            array('value' => 'eur', 'label' => 'Euros (€)'),
-            array('value' => 'usd', 'label' => 'US Dollars ($)') 
+            array('value' => 'inr', 'label' => 'Indian Rupees (₹)')
+            // array('value' => 'btc', 'label' => 'Bitcoin (฿)'),
+            // array('value' => 'eur', 'label' => 'Euros (€)'),
+            // array('value' => 'usd', 'label' => 'US Dollars ($)') 
          );
      }}
